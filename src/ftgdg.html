@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rent</title>
+  </head>
+  <body>
+    Car name :-
+    <input type="text" id="carType" placeholder="Please Enter A Car Name" />
+    <br /><br />
+    Number of days :-
+    <input
+      type="text"
+      id="numberofdays"
+      placeholder="Please Enter Number Of Days"
+    />
+    <br /><br />
+    <button onclick="calculateCarRentPrise()">Total payment</button>
+    <h2 id="payment"></h2>
+
+    <script>
+      function calculateCarRentPrise() {
+        let carType = {
+          Economy: 4000, // Rs. 4,000 per days
+          Midsize: 15000, // Rs. 15,000 per day
+          Luxury: 20000, // Rs. 20,000 per day
+        };
+
+        let a = document.getElementById("carType").value;
+        let b = document.getElementById("numberofdays").value;
+        let c = carType[a] * b;
+
+        document.getElementById("payment").innerText = `${c}`;
+      }
+    </script>
+  </body>
+</html>

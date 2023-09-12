@@ -23,6 +23,21 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.btn {
+  /* Your styling rules go here */
+  background-color: #3f94ef; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Add a hover effect */
+.btn:hover {
+  background-color: #042243; /* Darker blue on hover */
+}
+
 
 .App-link {
   color: #61dafb;
